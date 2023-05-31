@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SceneApp">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>GCQAgAkICQAAAIAAAAgEkCAAEBAAQCAApDAKCEAEAAA=</HashCode>
+      <FileName>C:\Users\Lee Gillan\Documents\Abertay_Y4\S1\CMP418\coursework-leegillan\scene_app.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="appState" />
+      <Field Name="spriteKeyFrame2D" />
+      <Field Name="spriteSkeleton2D" />
+      <Field Name="modelBlending3D" />
+      <Field Name="modelRagdoll3D" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AppState">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <AssociationLine Name="appState" Type="APP_STATE">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.965" Y="0.224" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="dimension" Type="DIMENSION">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.169" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAIAAgAAAAIQAAAAAAABIAAAAAAAAAAACAEAAAAA=</HashCode>
+      <FileName>AppState.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="appState" />
+      <Field Name="dimension" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Blending3DAnimation">
+    <Position X="19.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>SBUYAAQMwQBAEhAEsAQoAAgRNAEIH0ACQVECBECQAwA=</HashCode>
+      <FileName>3D\Blending3DAnimation.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="blendTree" />
+      <Field Name="tree" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ragdoll3DAnimation">
+    <Position X="16.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAUAACACEIAgAaAAAAEABIAUEAAEBggAEVAKBEBABmA=</HashCode>
+      <FileName>3D\Ragdoll3DAnimation.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="animation" />
+      <Field Name="blending3D" />
+      <Field Name="ragdoll_" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Frame2DAnimation">
+    <Position X="6.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAAEAAAAAAAAAACAAQFAAAAAAABRAGBEAAAQQ=</HashCode>
+      <FileName>2D\Frame2DAnimation.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Skeleton2DAnimation">
+    <Position X="11.5" Y="2.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="Skeleton2DAnimation::strSSlot" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>2D\Skeleton2DAnimation.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="Skeleton2DAnimation::strBone" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>2D\Skeleton2DAnimation.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AASIQg0ABAAAEAAwCAAgCIASERAACkgAhRAiREgAMQY=</HashCode>
+      <FileName>2D\Skeleton2DAnimation.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="curTexAtlas" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="sprite_texture_" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TextureAtlas">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <AssociationLine Name="armature" Type="Armature">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.898" Y="0.214" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAQAQAAAAAAAAAAECCAAAAAAAABAAAA=</HashCode>
+      <FileName>2D\TextureAtlas.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="armature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Armature">
+    <Position X="8.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABIBAAAAAAAAAAAAAAIIAAAEMAAAAAQAAAAAAAA=</HashCode>
+      <FileName>2D\Armature.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ragdoll">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAyAAoAAEACAggABAAAABCAIAAAAABAACIAQAAAA=</HashCode>
+      <FileName>3D\Ragdoll.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gef::Texture">
+    <Position X="8.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAAAAAAAAAAAAEAAEAAAAIEAAAAAAA=</HashCode>
+      <FileName>c:\Users\Lee Gillan\Documents\Abertay_Y4\S1\CMP418\gef_abertay\graphics\texture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlendTree">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAACAAAAAAAAAAAAAgCAAAAAAAAAACAEAEAAA=</HashCode>
+      <FileName>3D\BlendTree.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="output" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OutputNode">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>3D\BlendTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Animation3D">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>3D\Blending3DAnimation.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="animScene" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="AnimScenes">
+    <Position X="14" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>3D\Blending3DAnimation.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BlendingTree">
+    <Position X="22.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>3D\Blending3DAnimation.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="APP_STATE">
+    <Position X="1" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAEAAAAAAAAAAAAAIAAAAEAAABAAAAAAAAA=</HashCode>
+      <FileName>AppState.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DIMENSION">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppState.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
